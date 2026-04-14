@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartMeds</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <header>
+        <div id="logo">
+            <img src="./logo/unnamed.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <a href="#inscreva">
+                    <li>Menu</li>
+                </a>
+                <a href="#sobre">
+                    <li>Sobre</li>
+                </a>
+                <a href="#integrantes">
+                    <li>Integrantes</li>
+                </a>
+                <a href="#empresa">
+                    <li>Apresentação</li>
+                </a>-
+                <a href="#planos">
+                    <li>Planos</li>
+                </a>
+                <a href="#contato" id="pedido">
+                    <li>Fazer Pedido</li>
+                </a>
+        </nav>
+    </header>
+
+    <main class="main-section">
+        <!--Texto e Forms-->
+        <aside class="main-text">
+            <h2 id="inscreva">Entre em contato</h2>
+            <h2> - SAIBA MAIS</h2>
+            <p>
+                Hmm, quer mais segurança? 💊💉<br> Bem-vindo ao SmartMeds <br> Tenha controle e estoque dos seus
+                medicamentos de forma segura e inteligente! Clique aqui!
+            </p>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Formulário
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Entre em contato</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-inscricao">
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu email..." required>
+                                <input type="tel" name="celular" id="celular" placeholder="Digite seu WhatsApp..."
+                                    required>
+                                <button type="submit">Enviar informações</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <div class="main-img">
+            <img src="./logo/REMEDIO.png" alt="">
+        </div>
+    </main>
+    <a href="https://web.whatsapp.com/" id="whatsapp_fixo">
+        <img src="./logo/whatsapp.png" alt="whatsapp">
+    </a>
+
+    <section id="sobre">
+        <div class="sobre-container">
+            <div class="sobre-img">
+                <img src="./logo/Documento A4 Floral Bege e Branco.png" alt="banner2">
+            </div>
+            <div class="sobre-texto">
+                <h2>Sobre Nós</h2>
+                <p>Somos os<strong> desenvolvedores </strong>, da SmartMeds!
+                    Desenvolvedores: Samuel Rodrigues Vieira, Guilherme Jesuino Marques, Davi Rocha Ribeiro, Nathan
+                    Elias Pardim, Matheus de Jesus Toledo, Maria Luísa Joaquim Ortolan</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Parallax com Vídeo-->
+    <section id="parallax-video">
+        <video autoplay muted Loop playsinline id="bg-video">
+            <source src="./logo/Pharm Vid-20260310 (1).mp4" type="video/mp4">
+        </video>
+        <div class="parallax-text">
+            <h2>SmartMeds</h2>
+            <p>Você esta vendo o melhor sistema de estoque, junte-se à nos e tenha seu estoque sempre em ordem!</p>
+        </div>
+    </section>
+    <section id="empresa">
+        <div class="sobre-container">
+            <div class="sobre-img">
+                <img src="logo/unnamed.png" alt="banner2">
+            </div>
+            <div class="sobre-texto">
+                <h2>Sobre Nossa Empresa </h2>
+                <p>A SmartMeds é uma empresa especializada no desenvolvimento de soluções inteligentes para o controle e
+                    gestão de suprimentos médicos e farmacêuticos. Em um setor onde cada segundo e cada miligrama
+                    contam, nossa missão é eliminar o erro humano e garantir a máxima eficiência na cadeia de
+                    suprimentos.</p>
+            </div>
+        </div>
+    </section>
+    <section id="orçamento">
+        <div id="logo">
+
+            
+            <h1>Encontre o plano perfeito para você!</h1>
+            <h2>ORÇAMENTOS PARA ESPAÇO</h2>
+        </div>
+        <section id="plano">
+            <div class="grid-plano">
+                <div class="card-item">
+                    <div>
+                        <h3>SM Pro</h3>
+                        <hr>
+                        <ul>
+                            <li>✔ 70 atendentes </li>
+                            <li>✔ Atendimentos especializados</li>
+                            <li>✔ 3 lotes</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="preco">R$5000,00</div>
+                        <button class="btn-plano">ESCOLHA SEU PLANO</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div>
+                        <h3>SM Plus</h3>
+                        <hr>
+                        <ul>
+                            <li>✔ Atendimentos ilimitados </li>
+                            <li>✔ Atendimentos especializados</li>
+                            <li>✔ Lotes à negociar</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="preco">Negociar</div>
+                        <button class="btn-plano">ESCOLHA SEU PLANO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer id="rodape">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="./logo/logo.png" alt="" class="footer-logo">
+                <p>Organize os seus produtos com mais segurança e cuidado.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Siga-nos</h3>
+                <nav class="redes">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./logo/whatsapp-logo-4.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./logo/Instagram-Logo-PNG-Clipart.png" alt=""></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-col">
+                <h3>Contatos</h3>
+                <address>
+                    Escola SESI 210<br>
+                    Itapira/SP<br>
+                    <a href="tel:+551199999999">📞(11)99999-9999</a><br>
+                    <a href="maito:contato@SmartMeds.com">✉contato@SmartMeds.com</a>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SmartMeds. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

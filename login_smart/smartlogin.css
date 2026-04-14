@@ -1,0 +1,52 @@
+
+.gradient {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(270deg,red, rgb(241, 120, 140), purple);
+    background-size: 100% 100%;
+    padding: 300px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.login-container {
+    height: 100vh;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 380px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+.form-control {
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #fff;
+}
+.form-control:focus {
+    background: #0f172a;
+    border-color: #3b82f6;
+    box-shadow: none;
+    color: #fff;
+}
+.btn-login {
+    background: linear-gradient(135deg, #e43fe7, #7501ab);
+    border: none;
+}
+.btn-login:hover {
+    opacity: 0.9;
+}
+.text-muted {
+    color: #94a3b8 !important;
+}

@@ -1,0 +1,447 @@
+/*====Body====*/
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+/*====Header====*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(238, 237, 237, 0.5);
+}
+
+#logo img {
+    width: 50%;
+    max-width: 200px;
+    min-width: 120px;
+    height: auto;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #890000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: rgb(176, 14, 201);
+}
+
+#pedido{
+    border: 2px solid #890000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#pedido:hover{
+    background-color: rgb(132, 14, 201);
+    color: #fff;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 5%;
+    background: linear-gradient(135deg, #e0a1f9 60%, #ffffff 100%);
+}
+
+
+.main-text h2{
+    font-size: 40px;
+}
+
+#inscreva{
+    color: rgb(132, 14,201);
+    font-size: 60px;
+}
+
+main aside {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #080676;
+    flex: 1;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+form input{
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 1px solid #333;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus {
+    border-color: rgb(132, 14, 201);
+    box-shadow: 0 0 8px rgba(132, 14, 201, 2);
+}
+
+
+form button,
+form input[type="submit"] {
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background: rgb(132, 14, 201);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background: #a12fd6;
+    transform: scale(1.05);
+}
+
+.main-img img{
+    flex: 1;
+    max-width:600px;
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+    margin-top: 150px;
+    
+}
+
+
+a#whatsapp_fixo img{
+    width: 70px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+}
+
+.parallax-text p{
+    font-size: 22px;
+    margin-top: 15px;
+    text-shadow: 1px 1px 6px #000;
+}
+
+#sobre {
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #ffffff 0%, #ec85ed 100%);
+    color: #fff;
+}
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.sobre-img img{
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(224, 221, 221, 0.6);
+    background: linear-gradient(135deg, #e195ff 60%, #ffffff 100%);
+}
+.sobre-texto {
+    flex: 1;
+    min-width: 300px;
+}
+.sobre-texto h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgb(242, 0, 255);
+}
+.sobre-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/*========video fundo========*/
+
+#parallax-video {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+#parallax-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /*video cobre toda a área*/
+    filter: brightness(0.5);
+    /* deixa mais escuro para destacar o texto*/
+}
+
+#parallax-video .parallax-text {
+    position: relative;
+    z-index: 1;
+}
+/*----------sobre nossa empresa------*/
+#sobre {
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #e9d9fa, #e0aaff);
+    color: #fff;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sobre-img img{
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(224, 221, 221, 0.6);
+    background: linear-gradient(135deg, #e195ff 60%, #ffffff 100%);
+}
+
+.sobre-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-texto h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgb(242, 0, 255);
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+/*-------orçamento---------*/
+#orçamento {
+    background: linear-gradient(135deg, #e9d9fa, #e0aaff);
+}
+#logo img {
+    width: 50%;
+    max-width: 300px;
+    min-width: 150px;
+    height: auto;
+    margin-right: 50%;
+    margin-left: 40%;
+    background-color: linear-gradient(135deg, #e0aaff, #f3e8ff, #ffffff);
+}
+h1{
+    margin-left: 35%;
+    color: rgb(140, 85, 195);
+}
+h2{
+    margin-left: 40%;
+    margin-top: 10%;
+    color: rgb(140, 85, 195);
+}
+#plano {
+    padding: 80px 50px;
+    text-align: center;
+    color: #fff;
+}
+#plano h2{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+/* Grid */
+.grid-plano {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+}
+.card-item {
+    background: #de8ee3;
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-item img {
+    width: 100%;
+}
+/* Container geral */
+#plano {
+    padding: 80px 20px;
+}
+/* Grid dos planos */
+.grid-plano {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+/* Card */
+.card-item {
+    background: linear-gradient(135deg, #e9d9fa, #e0aaff);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(128, 0, 128, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+/* Efeito ao passar o mouse */
+.card-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(128, 0, 128, 0.25);
+}
+/* Título do plano */
+.card-item h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #a367b5;
+}
+/* Linha divisória */
+.card-item hr {
+    border: none;
+    height: 1px;
+    background: #9f58c3;
+    margin: 20px 0;
+}
+/* Lista de benefícios */
+.card-item ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.card-item ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #a367b5;
+}
+/* Preço */
+.preco {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #a367b5;
+}
+.preco span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #481752;
+}
+/* Botão */
+.btn-plano {
+    margin-top: 20px;
+    padding: 15px;
+    background: #8846be;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-plano:hover {
+    background: #a367b5;
+}
+/*----------Footer--------*/
+#rodape {
+    background:linear-gradient(135deg, #e9d9fa, #e0aaff);
+    color: #fff;
+    padding: 50px 20px 20px;
+    
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-col {
+    flex: 1;
+    min-width: 250px;
+  }
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  .footer-col h3 {
+    margin: 15px;
+    color: rgb(132, 14, 201);
+  }
+  .footer-col p,
+  .footer-col address {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .footer address {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-col address a:hover {
+    color: rgb(132, 14, 201);
+  }
+  /*Redes sociais */
+  .redes ul {
+    list-style: none;
+    padding: 0;
+  }
+  .redes ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .redes ul li img {
+    width: 35px;
+    transition: transform 0.3s, filter 0.3s;
+  }
+  .redes ul li img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 6px rgb(132, 14, 201));
+  }
+  /*parte inferior*/
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 15px;
+  }
